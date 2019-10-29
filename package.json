@@ -1,0 +1,26 @@
+{
+  "name": "example-app-rest",
+  "version": "1.0.0",
+  "description": "Paperspace NodeJS REST Coding Challenge",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon --exec babel-node ./api/index.js",
+    "test": "export NODE_ENV=test &&  sequelize db:migrate:undo:all  && sequelize db:migrate  && nyc --require @babel/register  mocha ./api/test/test.js --timeout 20000 --exit"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^4.2.0",
+    "chai-http": "^4.3.0",
+    "express": "^4.17.1",
+    "faker": "^4.1.0",
+    "level": "^5.0.1",
+    "sequelize": "^5.21.1",
+    "sqlite3": "^4.1.0",
+    "uuid": "^3.3.3"
+  },
+  "devDependencies": {
+    "nyc": "^14.1.1",
+    "sequelize-cli": "^5.5.1"
+  }
+}
