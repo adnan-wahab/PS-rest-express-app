@@ -12,3 +12,8 @@ Provide the solution as a public Github project. Also provide links to any servi
 
 
 http://www.groupkt.com/post/f2129b88/free-restful-web-services-to-consume-and-test.htm
+
+
+
+to run this app `npm run start dev`
+to run this app `npm run test`
